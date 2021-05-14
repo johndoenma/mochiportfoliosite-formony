@@ -42,15 +42,15 @@ body {
     font-size: 1.2em;
   }
   
-  .site-navigation a {
-    display: block;
-    padding: .25em .5em;
-  }
-  
   .site-navigation li {
     margin: 0 .5em;
     padding: 0;
     display: inline-block;
+  }
+  
+  .site-navigation a {
+    display: block;
+    padding: .25em .5em;
   }
 
 /*SITE-MAIN*/
@@ -80,7 +80,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 50%;
+    // width: 50%;
   }
   
   .thumbgrid li {
@@ -91,7 +91,7 @@ section {
   
   @media (min-width: 768px) {
     .thumbgrid li {
-      width: 49%;
+      width: 32.83333%;
     }
   }
   
@@ -157,3 +157,9 @@ section {
     }
     
 }
+
+// COGNITO CONTACT FORM
+.contactform {
+  max-width: 400px;
+  margin: 0 auto;
+} 

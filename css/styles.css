@@ -48,15 +48,15 @@ body {
   font-size: 1.2em;
 }
 
-.site-navigation a {
-  display: block;
-  padding: 0.25em 0.5em;
-}
-
 .site-navigation li {
   margin: 0 0.5em;
   padding: 0;
   display: inline-block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 0.25em 0.5em;
 }
 
 /*SITE-MAIN*/
@@ -87,7 +87,6 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
 }
 
 .thumbgrid li {
@@ -98,7 +97,7 @@ section {
 
 @media (min-width: 768px) {
   .thumbgrid li {
-    width: 49%;
+    width: 32.83333%;
   }
 }
 .thumbgrid a img {
@@ -169,6 +168,11 @@ section {
     width: 60%;
   }
 }
+.contactform {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 /*COLORS*/
 h1, h2, h3, h4 {
   color: #FFB600;
@@ -180,11 +184,11 @@ body {
 
 /*FONTS*/
 h1, h2, h3, h4 {
-  font-family: century-gothic, sans-serif;
+  font-family: karmina, century-gothic, sans-serif;
 }
 
 body {
-  font-family: ballinger, sans-serif;
+  font-family: gaultier, ballinger, sans-serif;
   font-weight: 100;
 }
 
@@ -200,6 +204,7 @@ h3 {
 .site-id h1 {
   font-size: 2.5em;
   text-transform: uppercase;
+  font-family: gaultier-lights, ballinger, sans-serif;
 }
 
 .site-id h2 {
@@ -231,8 +236,9 @@ img {
 }
 
 /*BUTTON*/
-.button {
-  font-family: century-gothic, sans-serif;
+.button,
+a.button {
+  font-family: karmina, century-gothic, sans-serif;
   color: #0F0F0F;
   background-color: #FFB600;
   border: 2px solid transparent;
@@ -242,7 +248,8 @@ img {
   transition: all ease-in-out 0.2s;
 }
 
-.button:hover {
+.button:hover,
+a.button:hover {
   color: #FFB600;
   background-color: #0F0F0F;
   border: 2px solid #FFB600;
